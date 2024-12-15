@@ -2,4 +2,4 @@ baseURL = 'https://shaylyu.github.io/Blog/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'dream'
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh"
