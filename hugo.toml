@@ -10,7 +10,7 @@ languageCode = "zh-Hans"
 lightTheme = "emerald"
 darkTheme = "forest"
 footerBottomText = "<div class='text-sm text-base-content/60'>采用 CC BY-NC 4.0 许可证发布</div>"
-rss = false
+rss = true
 motto = "繁星纵变 智慧永恒"
 author = "麦旋风超好吃"
 headerTitle = "麦旋风超好吃"
