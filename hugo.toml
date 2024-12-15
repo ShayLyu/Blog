@@ -4,6 +4,7 @@ theme = "dream"
 defaultContentLanguage = "zh"
 languageCode = "zh-Hans"
 
+
 [params]
 # zenMode = true
 lightTheme = "emerald"
