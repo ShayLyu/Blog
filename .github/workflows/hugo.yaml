@@ -39,10 +39,14 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Clone Dream theme
+
+      - name: Clone Dream theme (Skip if exists)
         run: |
-          cd themes
-          git submodule add https://github.com/g1eny0ung/hugo-theme-dream.git dream
+          if [ ! -d "themes/dream" ]; then
+            cd themes
+            git submodule add https://github.com/g1eny0ung/hugo-theme-dream.git dream
+          fi
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
