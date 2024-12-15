@@ -3,3 +3,40 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "dream"
 defaultContentLanguage = "zh"
+languageCode = "zh-Hans"
+
+[params]
+# zenMode = true
+lightTheme = "emerald"
+darkTheme = "forest"
+footerBottomText = "<div class='text-sm text-base-content/60'>采用 CC BY-NC 4.0 许可证发布</div>"
+rss = true
+motto = "繁星纵变 智慧永恒"
+author = "麦旋风超好吃"
+headerTitle = "麦旋风超好吃"
+avatar = "https://cdn.jsdelivr.net/gh/sigmax0124/logo@master/favicon-avatar.jpg"
+favicon = "https://cdn.jsdelivr.net/gh/sigmax0124/logo@master/favicon-avatar-round.png"
+siteStartYear = 2024
+email = "liushanhui9@gmail.com"
+description = "Shay的个人窝点"
+stickyNav = true
+reorderNavItems = ["github", "search", "rss", "posts", "categories", "tags"]
+collapseNavItems = ["posts", "categories", "tags", "rss"]
+customSyntaxHighlighting = true
+#waline = true
+#walineServer = "waline.ricolxwz.io"
+
+[params.navItems]
+github = { href = "https://github.com/ShayLyu", target = "_blank", icon = "logo-github", title = "GitHub" }
+
+[params.experimental]
+jsDate = true
+jsDateFormat = "yyyy年MM月dd日"
+
+[params.advanced]
+customCSS = ["css/custom.css"]
+#customJS = ["js/custom.js"]
+
+[markup]
+[markup.highlight]
+noClasses = false
