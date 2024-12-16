@@ -18,25 +18,16 @@ avatar = "https://cdn.jsdelivr.net/gh/sigmax0124/logo@master/favicon-avatar.jpg"
 favicon = "https://cdn.jsdelivr.net/gh/sigmax0124/logo@master/favicon-avatar-round.png"
 siteStartYear = 2024
 email = "liushanhui9@gmail.com"
-description = "Shay的个人窝点"
+description = "Shay的私人窝点"
 stickyNav = true
 reorderNavItems = ["github", "search", "rss", "posts", "categories", "tags"]
 collapseNavItems = ["posts", "categories", "tags", "rss"]
 customSyntaxHighlighting = true
 #waline = true
 #walineServer = "waline.ricolxwz.io"
-
 [params.navItems]
 github = { href = "https://github.com/ShayLyu", target = "_blank", icon = "logo-github", title = "GitHub" }
 
 [params.experimental]
 jsDate = true
 jsDateFormat = "yyyy年MM月dd日"
-
-#[params.advanced]
-#customCSS = ["css/custom.css"]
-##customJS = ["js/custom.js"]
-
-[markup]
-[markup.highlight]
-noClasses = false
