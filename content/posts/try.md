@@ -1,11 +1,11 @@
 ---
-title: Try
+title: "hello"
 date: 2024-12-16T22:04:37+08:00
 lastmod: 2024-12-16T22:04:37+08:00
 author: Shay
 # avatar: /img/author.jpg
 # authorlink: https://author.site
-cover: /img/6c6798dcd3c340f7e5b7b8518e9c2bb0.jpeg
+cover: /img/cover.jpg
 # images:
 #   - /img/cover.jpg
 categories:
