@@ -4,7 +4,7 @@ name: Deploy Hugo site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.137.1
+      HUGO_VERSION: 0.132.1
     steps:
       - name: Install Hugo CLI
         run: |
@@ -39,20 +39,13 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Clone Dream theme (Skip if exists)
+      - name: Clone Dream theme
         run: |
-          if [ ! -d "themes/dream" ]; then
-            cd themes
-            git submodule add https://github.com/g1eny0ung/hugo-theme-dream.git dream
-          fi
-
+          cd themes
+          git clone https://github.com/ricolxwz/hugo-theme-dream.git dream
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Clean old files
-        run: |
-          rm -rf ./public
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
