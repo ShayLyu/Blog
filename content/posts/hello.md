@@ -2,23 +2,16 @@
 title: Hello
 date: 2024-12-16T22:26:30+08:00
 lastmod: 2024-12-16T22:26:30+08:00
-author: Author Name
+author: Shay
 # avatar: /img/author.jpg
 # authorlink: https://author.site
-cover: /img/cover.jpg
+cover: /img/6c6798dcd3c340f7e5b7b8518e9c2bb0.jpeg
 # images:
 #   - /img/cover.jpg
 categories:
-  - category1
+  - Start
 tags:
-  - tag1
-  - tag2
+  - Blog
+  - Helloworld
 # nolastmod: true
-draft: true
 ---
-
-Cut out summary from your post content here.
-
-<!--more-->
-
-The remaining content of your post.
