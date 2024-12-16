@@ -11,7 +11,7 @@ lightTheme = "emerald"
 darkTheme = "forest"
 footerBottomText = "<div class='text-sm text-base-content/60'>采用 CC BY-NC 4.0 许可证发布</div>"
 rss = true
-motto = "繁星纵变 智慧永恒"
+motto = "我想看见坚持的尽头到底有什么"
 author = "Shay"
 headerTitle = "Shay"
 avatar = "https://cdn.jsdelivr.net/gh/ShayLyu/logo@main/avatar.jpg"
@@ -23,7 +23,9 @@ stickyNav = true
 reorderNavItems = ["github", "search", "rss", "posts", "categories", "tags"]
 collapseNavItems = ["posts", "categories", "tags", "rss"]
 customSyntaxHighlighting = true
-
+showTableOfContents = true
+showSummaryCoverInPost = true
+showPrevNextPost = true
 #waline = true
 #walineServer = "waline.ricolxwz.io"
 
