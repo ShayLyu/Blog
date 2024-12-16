@@ -25,9 +25,7 @@ concurrency:
 defaults:
   run:
     shell: bash
-
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     env:
@@ -43,6 +41,16 @@ jobs:
         run: |
           cd themes
           git clone https://github.com/ShayLyu/hugo-theme-dream.git dream
+      - name: Debug: List content directory
+        run: |
+          ls -R content
+      - name: Debug: List theme directory
+        run: |
+          ls -R themes/dream
+      - name: Create a test post
+        run: |
+          mkdir -p content/posts
+          echo -e "---\ntitle: Test Post\ndate: $(date -Iseconds)\n---\nThis is a test post." > content/posts/test.md
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -60,6 +68,41 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+
+#jobs:
+#  # Build job
+#  build:
+#    runs-on: ubuntu-latest
+#    env:
+#      HUGO_VERSION: 0.132.1
+#    steps:
+#      - name: Install Hugo CLI
+#        run: |
+#          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+#          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+#      - name: Checkout
+#        uses: actions/checkout@v4
+#      - name: Clone Dream theme
+#        run: |
+#          cd themes
+#          git clone https://github.com/ShayLyu/hugo-theme-dream.git dream
+#      - name: Setup Pages
+#        id: pages
+#        uses: actions/configure-pages@v5
+#      - name: Build with Hugo
+#        env:
+#          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+#          HUGO_ENVIRONMENT: production
+#        run: |
+#          hugo \
+#            --cleanDestinationDir \
+#            --gc \
+#            --minify \
+#            --config hugo.toml
+#      - name: Upload artifact
+#        uses: actions/upload-pages-artifact@v3
+#        with:
+#          path: ./public
 
   # Deployment job
   deploy:
