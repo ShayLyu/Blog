@@ -1,5 +1,5 @@
 baseURL = 'https://shaylyu.github.io/Blog/'
-title = '2024 Shay'
+title = 'Shay'
 theme = 'dream'
 defaultContentLanguage = "zh"
 languageCode = "zh-Hans"
