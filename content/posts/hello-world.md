@@ -1,20 +1,24 @@
 ---
 title: Hello World
-date: 2024-12-16T16:27:15+08:00
-lastmod: 2024-12-16T16:27:15+08:00
-author: Shay
-avatar: https://cdn.jsdelivr.net/gh/ShayLyu/logo@main/avatar.jpg
-authorlink: https://github.com/ShayLyu
-cover: /img/6c6798dcd3c340f7e5b7b8518e9c2bb0.jpeg
-images:
-   - /img/6c6798dcd3c340f7e5b7b8518e9c2bb0.jpeg
+date: 2024-12-16T16:54:36+08:00
+lastmod: 2024-12-16T16:54:36+08:00
+author: Author Name
+# avatar: /img/author.jpg
+# authorlink: https://author.site
+cover: /img/cover.jpg
+# images:
+#   - /img/cover.jpg
 categories:
-  - Demo
+  - category1
 tags:
   - tag1
   - tag2
-nolastmod: true
-
+# nolastmod: true
+draft: true
 ---
 
+Cut out summary from your post content here.
 
+<!--more-->
+
+The remaining content of your post.
