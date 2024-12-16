@@ -1,7 +1,7 @@
 ---
-title: "Hello world"
-date: 2024-12-16
-lastmod: 2024-12-16
+title: Hello
+date: 2024-12-16T22:26:30+08:00
+lastmod: 2024-12-16T22:26:30+08:00
 author: Author Name
 # avatar: /img/author.jpg
 # authorlink: https://author.site
