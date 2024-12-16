@@ -1,7 +1,6 @@
 ---
 title: Me
-date: 2024-12-15T19:33:08+08:00
-draft: true
+date: 2024-12-16T16:34:49+08:00
 ---
 
 Hi! 🤩 The name is Shay.
