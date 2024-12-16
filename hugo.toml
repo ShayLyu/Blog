@@ -31,3 +31,11 @@ github = { href = "https://github.com/ShayLyu", target = "_blank", icon = "logo-
 [params.experimental]
 jsDate = true
 jsDateFormat = "yyyy年MM月dd日"
+
+[params.advanced]
+customCSS = ["css/custom.css"]
+customJS = ["js/custom.js"]
+
+[markup]
+[markup.highlight]
+noClasses = false
